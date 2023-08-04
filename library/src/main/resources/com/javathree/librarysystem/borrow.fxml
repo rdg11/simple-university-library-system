@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox alignment="CENTER" prefHeight="159.0" prefWidth="391.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javathree.librarysystem.borrowController">
+    <children>
+        <Label text="New Borrow" />
+        <TextField fx:id="memberId" promptText="Member ID" />
+        <Label text="Item Type">
+            <graphic>
+                <ChoiceBox fx:id="type" prefHeight="8.0" prefWidth="260.0" />
+            </graphic>
+        </Label>
+        <TextField fx:id="isbn" promptText="ISBN (for books and DVDs)" />
+        <TextField fx:id="issn" promptText="ISSN (for Journals and Newspapers)" />
+        <Button onAction="#submitBorrow" text="Submit" />
+        <Text fx:id="message" />
+        <Button onAction="#returnBorrow" text="Return" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

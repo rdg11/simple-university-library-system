@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="159.0" prefWidth="391.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javathree.librarysystem.NewMemberController">
+    <children>
+        <Label text="New Member" />
+      <Label text="Account Type">
+         <graphic>
+            <ChoiceBox fx:id="accountType" prefHeight="8.0" prefWidth="260.0" />
+         </graphic>
+      </Label>
+      <TextField fx:id="name" promptText="Name" />
+      <TextField fx:id="address" promptText="Address" />
+      <DatePicker fx:id="dob" prefHeight="7.0" prefWidth="350.0" promptText="Date of Birth" />
+      <TextField fx:id="email" promptText="Email" />
+      <TextField fx:id="ssn" promptText="SSN (no dashes)" />
+      <TextField fx:id="id" promptText="ID" />
+      <TextField fx:id="school" promptText="School (if student)" />
+      <TextField fx:id="major" promptText="Major (if student)" />
+      <TextField fx:id="studentid" promptText="StudentID (if student)" />
+      <TextField fx:id="department" promptText="Department (if professor)" />
+      <Button onAction="#submitNewMember" text="Submit" />
+      <Text fx:id="message" />
+      <Button onAction="#returnNewMember" text="Return" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

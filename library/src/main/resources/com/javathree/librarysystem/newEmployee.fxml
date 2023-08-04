@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="133.0" prefWidth="259.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javathree.librarysystem.newEmployeeController">
+   <children>
+      <Label text="New Employee" />
+      <Label text="Type">
+         <graphic>
+            <ChoiceBox fx:id="employeeType" prefWidth="150.0" />
+         </graphic>
+      </Label>
+      <TextField fx:id="name" promptText="Employee Name" />
+      <TextField fx:id="address" promptText="Address" />
+      <DatePicker fx:id="dob" prefHeight="22.0" prefWidth="218.0" promptText="Date of Birth" />
+      <TextField fx:id="email" promptText="Email" />
+      <TextField fx:id="ssn" promptText="SSN (no dashes)" />
+      <TextField fx:id="empID" promptText="Employee ID" />
+      <Button onAction="#submitNewEmployee" text="Submit" />
+      <Text fx:id="message" />
+      <Button onAction="#returnNewEmployee" text="Return" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
